@@ -144,3 +144,4 @@ noremap <Left>  <Nop>
 noremap <Right> <Nop>
 set ignorecase
 set smartcase
+set textwidth=120
