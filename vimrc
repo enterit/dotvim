@@ -145,3 +145,4 @@ noremap <Right> <Nop>
 set ignorecase
 set smartcase
 set textwidth=120
+command Greview :Git! diff --cached
