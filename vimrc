@@ -149,3 +149,4 @@ command Greview :Git! diff --cached
 nnoremap <F5> "=strftime("%a, %d %b %Y %H:%M:%S")<CR>P
 inoremap <F5> <C-R>=strftime("%a, %d %b %Y %H:%M:%S")<CR>
 set columns=200
+au GUIEnter * simalt ~x
