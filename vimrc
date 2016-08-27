@@ -157,3 +157,6 @@ command! -nargs=* Wrap set wrap linebreak nolist
 let g:signify_sign_show_count = 0
 let g:signify_sign_change = '~'
 let g:signify_vcs_list = [ 'git' ]
+
+" use slash instead of backslash as path separator in windows
+set shellslash
