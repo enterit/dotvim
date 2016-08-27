@@ -160,3 +160,8 @@ let g:signify_vcs_list = [ 'git' ]
 
 " use slash instead of backslash as path separator in windows
 set shellslash
+
+" ack plugin settings for search using ag
+
+let g:ackprg = 'ag --nogroup --nocolor --column'
+let g:ackhighlight = 1
