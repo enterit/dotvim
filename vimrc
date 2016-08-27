@@ -151,3 +151,9 @@ inoremap <F5> <C-R>=strftime("%a, %d %b %Y %H:%M:%S")<CR>
 set columns=200
 au GUIEnter * simalt ~x
 command! -nargs=* Wrap set wrap linebreak nolist
+
+
+" signify plugin settings
+let g:signify_sign_show_count = 0
+let g:signify_sign_change = '~'
+let g:signify_vcs_list = [ 'git' ]
