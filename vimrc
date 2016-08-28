@@ -219,3 +219,7 @@ nmap <leader>bq :bp <BAR> bd #<CR>
 
 " Show all open buffers and their status
 nmap <leader>bl :ls<CR>
+
+
+" show jsdoc popup window on the bottom, otherwise it shows up at the top and shifts current buffer down
+set splitbelow
