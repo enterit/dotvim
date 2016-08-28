@@ -165,3 +165,7 @@ set shellslash
 
 let g:ackprg = 'ag --nogroup --nocolor --column'
 let g:ackhighlight = 1
+
+" Use space bar as a leader key
+let mapleader = "\<Space>"
+nnoremap <Space> <Nop>
