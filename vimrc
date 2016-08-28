@@ -169,3 +169,6 @@ let g:ackhighlight = 1
 " Use space bar as a leader key
 let mapleader = "\<Space>"
 nnoremap <Space> <Nop>
+
+" Do not move cursor when switching tabs
+set nostartofline
