@@ -74,6 +74,7 @@ set tabstop=4
 set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
+autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 au BufRead,BufNewFile *.as set filetype=actionscript
 " set default font
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h10
