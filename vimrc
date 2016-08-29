@@ -223,3 +223,8 @@ nmap <leader>bl :ls<CR>
 
 " show jsdoc popup window on the bottom, otherwise it shows up at the top and shifts current buffer down
 set splitbelow
+
+
+" key bindings for ack search
+nnoremap <leader>a :Ack
+vnoremap <Leader>a y:Ack <C-r>=fnameescape(@")<CR><CR>
