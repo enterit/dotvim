@@ -228,3 +228,8 @@ set splitbelow
 " key bindings for ack search
 nnoremap <leader>a :Ack
 vnoremap <Leader>a y:Ack <C-r>=fnameescape(@")<CR><CR>
+
+
+" key bindings for vim-expand-region
+vmap v <Plug>(expand_region_expand)
+vmap <C-v> <Plug>(expand_region_shrink)
