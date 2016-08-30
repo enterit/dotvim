@@ -233,3 +233,13 @@ vnoremap <Leader>a y:Ack <C-r>=fnameescape(@")<CR><CR>
 " key bindings for vim-expand-region
 vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)
+
+
+" key bindings for browserlink plugin
+vmap <silent><Leader>r :BLEvaluateSelection<CR>
+nmap <silent><Leader>r :BLEvaluateBuffer<CR>
+
+
+" mapped jj to escape
+ino jj <esc>
+cno jj <c-c>
