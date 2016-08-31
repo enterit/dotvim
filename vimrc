@@ -81,7 +81,6 @@ set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h10
 
 "Personal Settings.
 "More to be added soon.
-execute pathogen#infect()
 filetype plugin indent on
 syntax on
 
