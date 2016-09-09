@@ -65,11 +65,13 @@ nnoremap <F7> :call NumberToggle()<cr>
 syntax on
 
 set term=xterm
-set t_Co=256
+"set t_Co=256
+set t_Co=16
 let &t_AB="\e[48;5;%dm"
 let &t_AF="\e[38;5;%dm"
 
-let g:onedark_termcolors=256
+"let g:onedark_termcolors=256
+let g:onedark_termcolors=16
 colorscheme onedark
 
 filetype plugin indent on
