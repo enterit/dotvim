@@ -73,6 +73,7 @@ let &t_AF="\e[38;5;%dm"
 "let g:onedark_termcolors=256
 let g:onedark_termcolors=16
 colorscheme onedark
+let g:airline_theme='onedark'
 
 filetype plugin indent on
 " show existing tab with 4 spaces width
