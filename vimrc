@@ -246,6 +246,7 @@ vmap <C-v> <Plug>(expand_region_shrink)
 vmap <silent><Leader>r :BLEvaluateSelection<CR>
 nmap <silent><Leader>r :BLEvaluateParagraph<CR>
 nmap <silent><Leader>R :BLEvaluateBuffer<CR>
+let g:bl_no_autoupdate = 1
 
 " mapped jj to escape
 ino jj <esc>
