@@ -258,3 +258,9 @@ cno jj <c-c>
 if has("gui_running")
     let g:fugitive_git_executable = 'set GIT_EDITOR=gvim && git'
 endif
+
+
+" do not map default bindings for windowswap, since <leader>pw slows down <leader>p that is preferrable for NERDTree
+" <leader>pw is deprecated anyways
+let g:windowswap_map_keys = 0
+nnoremap <silent> <leader>ww :call WindowSwap#EasyWindowSwap()<CR>
