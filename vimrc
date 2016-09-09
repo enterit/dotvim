@@ -88,8 +88,17 @@ set shiftwidth=4
 set expandtab
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 au BufRead,BufNewFile *.as set filetype=actionscript
+
+
 " set default font
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h10
+if ($OS == 'Windows_NT')
+    " Windows specific settings
+    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h10
+else
+    " Unix specific settings
+    set guifont=Roboto\ Mono\ for\ Powerline\ 10
+endif
+
 
 "Personal Settings.
 "More to be added soon.
