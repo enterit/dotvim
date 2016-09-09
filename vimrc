@@ -311,3 +311,12 @@ endfunction
 " Super useful! From an idea by Michael Naumann
 vnoremap <silent> * :<C-u>call VisualSelection('', '')<CR>/<C-R>=@/<CR><CR>
 vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
+
+
+" Yank to clipboard by default.
+" From http://stackoverflow.com/questions/13380643/vim-use-as-default-register-only-for-yank-command
+:nnoremap <expr> y (v:register ==# '"' ? '"+' : '') . 'y'
+:nnoremap <expr> yy (v:register ==# '"' ? '"+' : '') . 'yy'
+:nnoremap <expr> Y (v:register ==# '"' ? '"+' : '') . 'Y'
+:xnoremap <expr> y (v:register ==# '"' ? '"+' : '') . 'y'
+:xnoremap <expr> Y (v:register ==# '"' ? '"+' : '') . 'Y'
