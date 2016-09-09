@@ -244,8 +244,8 @@ vmap <C-v> <Plug>(expand_region_shrink)
 
 " key bindings for browserlink plugin
 vmap <silent><Leader>r :BLEvaluateSelection<CR>
-nmap <silent><Leader>r :BLEvaluateBuffer<CR>
-
+nmap <silent><Leader>r :BLEvaluateParagraph<CR>
+nmap <silent><Leader>R :BLEvaluateBuffer<CR>
 
 " mapped jj to escape
 ino jj <esc>
