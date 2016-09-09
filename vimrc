@@ -5,6 +5,9 @@ let $HOME=$VIM
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
+" key binding for initializing youcomplete manually
+" the plugin takes too much time to start, so let's initialize it only when necessary
+noremap <F1> :call youcompleteme#Enable()<CR>
 
 set nocompatible
 source $VIMRUNTIME/vimrc_example.vim
