@@ -268,3 +268,13 @@ nnoremap <silent> <leader>ww :call WindowSwap#EasyWindowSwap()<CR>
 
 " key bindings for NERDTree
 nmap <silent> <Leader>p :NERDTreeToggle<CR>
+
+
+" Map the Y key to y$, so that it behaves the same as D and C.
+" This should happen after yankstack plugin is initialized.
+call yankstack#setup()
+nmap Y y$
+" Make it possible to use Alt-.. combinations in gvim. By default they are bound to menus.
+set winaltkeys=no
+" Disable autopairs Alt-P mapping, so it could be used by yankstack plugin.
+let g:AutoPairsShortcutToggle = ''
