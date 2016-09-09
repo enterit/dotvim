@@ -1,5 +1,9 @@
 " Make vim portable.
-let $HOME=$VIM
+if ($OS == 'Windows_NT')
+    " Windows specific settings
+    let $HOME=$VIM
+endif
+
 
 " Load and run pathogen.
 runtime bundle/vim-pathogen/autoload/pathogen.vim
