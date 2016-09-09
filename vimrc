@@ -53,7 +53,9 @@ set relativenumber
 function! NumberToggle()
   if(&relativenumber == 1)
     set number
+    set norelativenumber
   else
+    set nonumber
     set relativenumber
   endif
 endfunc
