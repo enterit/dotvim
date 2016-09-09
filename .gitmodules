@@ -58,3 +58,6 @@
 [submodule "bundle/browserlink.vim"]
 	path = bundle/browserlink.vim
 	url = https://github.com/enterit/browserlink.vim.git
+[submodule "bundle/vim-yankstack"]
+	path = bundle/vim-yankstack
+	url = https://github.com/maxbrunsfeld/vim-yankstack.git
