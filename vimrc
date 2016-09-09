@@ -268,6 +268,9 @@ nnoremap <silent> <leader>ww :call WindowSwap#EasyWindowSwap()<CR>
 
 " key bindings for NERDTree
 nmap <silent> <Leader>p :NERDTreeToggle<CR>
+" disable left-hand scroll in gui vim, since it causes gvim window to jump and resize
+" when NERDTree shows up
+:set guioptions-=L
 
 
 " Map the Y key to y$, so that it behaves the same as D and C.
