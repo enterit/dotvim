@@ -60,7 +60,7 @@ function! NumberToggle()
   endif
 endfunc
 
-nnoremap <C-n> :call NumberToggle()<cr>
+nnoremap <F7> :call NumberToggle()<cr>
 
 syntax on
 
