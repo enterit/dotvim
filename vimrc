@@ -251,3 +251,10 @@ let g:bl_no_autoupdate = 1
 " mapped jj to escape
 ino jj <esc>
 cno jj <c-c>
+
+
+" Use gvim for fugitive when it is called from gvim.
+" Otherwise vim is called from Git MSYS console, which breaks xterm colors.
+if has("gui_running")
+    let g:fugitive_git_executable = 'set GIT_EDITOR=gvim && git'
+endif
