@@ -264,3 +264,7 @@ endif
 " <leader>pw is deprecated anyways
 let g:windowswap_map_keys = 0
 nnoremap <silent> <leader>ww :call WindowSwap#EasyWindowSwap()<CR>
+
+
+" key bindings for NERDTree
+nmap <silent> <Leader>p :NERDTreeToggle<CR>
