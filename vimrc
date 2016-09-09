@@ -281,3 +281,7 @@ nmap Y y$
 set winaltkeys=no
 " Disable autopairs Alt-P mapping, so it could be used by yankstack plugin.
 let g:AutoPairsShortcutToggle = ''
+
+
+" key bindings for search highlight removing
+map <silent> <leader><cr> :noh<cr>
