@@ -259,11 +259,34 @@ vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)
 
 
-" key bindings for browserlink plugin
-vmap <silent><Leader>r :BLEvaluateSelection<CR>
-nmap <silent><Leader>r :BLEvaluateParagraph<CR>
-nmap <silent><Leader>R :BLEvaluateBuffer<CR>
+" settings and key bindings for browserlink and slime plugins
 let g:bl_no_autoupdate = 1
+let g:slime_target = "conemu"
+
+let g:codeeval = "browserlink"
+function! SlimeBufferSend()
+    let save_cursor = getpos(".")
+    exec "1,$SlimeSend"
+    call setpos('.', save_cursor)
+endfunc
+function! CodeevalToggle()
+  if(g:codeeval == "browserlink")
+    let g:codeeval = "slime"
+    nmap <silent><leader>r <Plug>SlimeParagraphSend
+    xmap <silent><leader>r <Plug>SlimeRegionSend
+    nmap <silent><leader>R :call SlimeBufferSend()<CR>
+  else
+    let g:codeeval = "browserlink"
+    vmap <silent><Leader>r :BLEvaluateSelection<CR>
+    nmap <silent><Leader>r :BLEvaluateParagraph<CR>
+    nmap <silent><Leader>R :BLEvaluateBuffer<CR>
+  endif
+endfunc
+
+call CodeevalToggle()
+call CodeevalToggle()
+nnoremap <F9> :call CodeevalToggle()<cr>
+
 
 " mapped jj to escape
 ino jj <esc>
