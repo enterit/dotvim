@@ -69,13 +69,17 @@ nnoremap <F7> :call NumberToggle()<cr>
 syntax on
 
 set term=xterm
-"set t_Co=256
-set t_Co=16
 let &t_AB="\e[48;5;%dm"
 let &t_AF="\e[38;5;%dm"
 
-"let g:onedark_termcolors=256
-let g:onedark_termcolors=16
+if ($TERM == 'xterm-256color')
+    set t_Co=256
+    let g:onedark_termcolors=256
+else
+    set t_Co=16
+    let g:onedark_termcolors=16
+endif
+
 colorscheme onedark
 let g:airline_theme='onedark'
 
